@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.9;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.open,
+.model-btn{
+    border: none;
+    background-color: rgb(7, 92, 92);
+    color: white;
+    padding: 0.9rem 0.9rem;
+    font-size: 0.8rem;
+    outline: none;
+ border-radius: 0.7rem;
+ cursor: pointer;
+}
+.model-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0 0 0 0.35);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+   
+}
+.model{
+    background-color: rgb(240, 248, 255);
+    box-shadow: rgb(66, 66, 66);
+    border-bottom-left-radius: 0.8rem;
+    padding: 2rem 3.5rem;
+    width: auto;
+    
+}
+.model h1,
+.model p{
+    margin-bottom: 0.8rem;
+}
+.show {
+    opacity: 1;
+    pointer-events: auto;
+}
